@@ -1,0 +1,1 @@
+﻿Get-TypeData | ? { $_.TypeName -like "*System.Management.Automation.AliasInfo*" } | Select *

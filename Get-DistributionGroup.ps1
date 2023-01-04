@@ -1,0 +1,2 @@
+﻿# LIST DISTRIBUTION GROUPS FOR A USER
+Get-DistributionGroup | ? { $_.OrganizationalUnit -like "*hillarys.net/Distribution Lists*" } |  where { (Get-DistributionGroupMember $_.Name | foreach {$_.PrimarySmtpAddress}) -eq "Leah.Campbell@hdgroupuk.com" } | Select DisplayName, PrimarySMTPAddress, Identity, GroupType | Sort DisplayName | FT -AutoSize

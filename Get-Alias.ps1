@@ -1,0 +1,1 @@
+﻿Get-Alias | ? {$_.OutputType -ne "System.IO.FileInfo" -or "System.IO.DirectoryInfo" }
