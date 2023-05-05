@@ -6,3 +6,9 @@ if($x -eq 1) {
 else {
     Write-Host "NAY"
 }
+
+$x = 1..5
+
+foreach ($i in $x) {
+    Write-Host $x
+}
